@@ -28,7 +28,6 @@ void ingresoMascota(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5, 
 void mServicios(int *opc1, int *serv1, int *serv2, int *serv3, int *serv4)
 {
     int servicio=0;
-    int confirmacion=0;
     printf("\nID              Nombre                          Descripción                             Precio\n");
     printf("1234            Consultas                   Examenes fisicos para la salud                  $10\n");
     printf("4567            Cirugia                     Procedimientos quirúrgicos                      $40\n");
