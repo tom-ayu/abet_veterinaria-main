@@ -1,0 +1,11 @@
+ 
+------------------------FACTURA-----------------------
+Nombre del Dueño: pepe
+Nombre de la Mascota: pepe
+ID de la Mascota: 1234
+Servicio 1: Consultas
+Servicio 4: Cuidado dental
+Precio Servicio 1 (unitario $10): $10
+Precio Servicio 4 (unitario $7): $7
+Precio Total: $34
+---------------------------------------------------

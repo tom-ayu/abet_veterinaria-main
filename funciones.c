@@ -89,6 +89,7 @@ void modificarFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5
                 if (*serv1>0)
                 {
                     *serv1-=1;
+                    printf("Servicio retirado satisfactoriamente.\n");
                 }else
                 {
                     printf("No se ha ingresado ese servicio.\n");
@@ -99,6 +100,7 @@ void modificarFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5
                 if (*serv2>0)
                 {
                     *serv2-=1;
+                    printf("Servicio retirado satisfactoriamente.\n");
                 }else
                 {
                     printf("No se ha ingresado ese servicio.\n");
@@ -109,6 +111,7 @@ void modificarFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5
                 if (*serv3>0)
                 {
                     *serv3-=1;
+                    printf("Servicio retirado satisfactoriamente.\n");
                 }else
                 {
                     printf("No se ha ingresado ese servicio.\n");
@@ -119,6 +122,7 @@ void modificarFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5
                 if (*serv4>0)
                 {
                     *serv4-=1;
+                    printf("Servicio retirado satisfactoriamente.\n");
                 }else
                 {
                     printf("No se ha ingresado ese servicio.\n");
