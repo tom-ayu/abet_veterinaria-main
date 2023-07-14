@@ -2,7 +2,7 @@
 
 int main (int argc, char *argv[]) {
     int menu=0;
-    char mascota[1][5][50];
+    char mascota[1][5][100];
     char *opc1=&mascota[0][0][50];
     char *opc2=&mascota[0][1][50];
     char *opc3=&mascota[0][2][50];
@@ -31,17 +31,37 @@ int main (int argc, char *argv[]) {
         switch (menu)
         {
         case 1:
-            ingresoMascota(opc1, opc2, opc3, opc4, opc5, serv1, serv2, serv3, serv4);
-            fflush(stdin);
+            ingresoMascota(opc1, opc2, opc3, opc4, opc5, serv1, serv2, serv3, serv4, cont);
             break;
         case 2:
-            mServicios(opc1, serv1, serv2, serv3, serv4);
+            if (*cont==0)
+            {
+                printf("No se ha ingresado una mascota.\n");
+            }else
+            {
+                mServicios(opc1, serv1, serv2, serv3, serv4);
+            }
+            
             break;  
         case 3:
-            modificarFactura(opc1, opc2, opc3, opc4, opc5, serv1, serv2, serv3, serv4);
+            if (*cont==0)
+            {
+                printf("No se ha ingresado una mascota.\n");
+            }else
+            {
+                modificarFactura(opc1, opc2, opc3, opc4, opc5, serv1, serv2, serv3, serv4);
+            }
+            
             break;   
         case 4: 
-            mFactura(opc1, opc2, opc3, opc4, opc5, serv1, serv2, serv3, serv4, cont);
+            if (*cont==0)
+            {
+                printf("No se ha ingresado una mascota.\n");
+            }else
+            {
+                mFactura(opc1, opc2, opc3, opc4, opc5, serv1, serv2, serv3, serv4, cont);
+            }
+            
             break;
         case 5: 
             printf("Salida exitosa.");
